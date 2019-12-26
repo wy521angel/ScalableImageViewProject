@@ -96,8 +96,8 @@ public class ScalableImageView extends View {
     }
 
     public void setCurrentScale(float currentScale) {
-        invalidate();
         this.currentScale = currentScale;
+        invalidate();
     }
 
     private ObjectAnimator getAnimator() {
